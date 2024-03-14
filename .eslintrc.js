@@ -1,33 +1,32 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+    env: {
+        browser: true,
+        es2021: true,
+        "jest/globals": true,
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+    extends: [
+        "plugin:jest/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
     ],
-    "overrides": [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    parser: "@typescript-eslint/parser",
+    plugins: ["@typescript-eslint"],
+    ignorePatterns: ["webpack.config.js", "dist"],
+    parserOptions: {
+        ecmaVersion: 12,
+        sourceType: "module",
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
-    "rules": {
-    }
-}
+    rules: {
+        "import/prefer-default-export": "off",
+        "jest/valid-title": "off",
+        "no-console": "off",
+        "no-alert": "off",
+        "no-restricted-globals": "off",
+        "no-plusplus": "off",
+        "no-param-reassign": ["error", { props: false }],
+        "@typescript-eslint/ban-ts-comment": "off",
+        indent: ["error", 4],
+        "import/no-unresolved": "off", // https://github.com/typescript-eslint/typescript-eslint/issues/1624
+    // "import/extensions": ["warn", "never"], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+    },
+};
