@@ -1,4 +1,4 @@
-.container {
+.header {
   margin: 0px 30px;
 }
 
@@ -78,4 +78,29 @@ body {
 
 .button:hover {
   background-color: rgb(255, 104, 70);
+}
+
+.img > img {
+  max-width: 650px;
+  height: auto;
+}
+
+.first-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 75px 75px 75px 75px;
+}
+
+.first-container-info {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid rgb(238, 123, 81);
+  border-bottom: 3px solid rgb(238, 123, 81);
+  margin-left: 20px;
+}
+
+.ul-item {
+  color: aliceblue;
+  margin: 20px 0px 20px 0px;
 }
