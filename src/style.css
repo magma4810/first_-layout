@@ -29,7 +29,7 @@ header {
   justify-content: space-between;
 }
 
-.nav {
+.header-nav {
   display: flex;
 }
 .nav-item {
@@ -44,16 +44,16 @@ header {
   color: rgb(238, 123, 81);
 }
 
-.phone {
+.header-phone {
   padding-left: 20px;
 }
 
-.phone-number {
+.header-phone-number {
   display: flex;
   align-items: center;
 }
 
-.phone-text {
+.header-phone-text {
   font-size: 14px;
   font-weight: 400;
   color: aliceblue;
@@ -121,11 +121,13 @@ header {
 .cards {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 75px;
 }
 
 .work-photo {
   display: flex;
+  justify-content: space-around;
   justify-content: center;
   margin: 75px;
 }
@@ -165,4 +167,22 @@ footer {
 
 .social-whatsapp {
   height: 50px;
+}
+
+.header-menu {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header-menu {
+    display: block;
+  }
+  .header-nav,
+  .header-line,
+  .btn {
+    display: none;
+  }
+  .img {
+    display: none;
+  }
 }
