@@ -5,6 +5,7 @@ module.exports = {
     "jest/globals": true,
   },
   extends: [
+    "eslint:recommended",
     "plugin:jest/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
@@ -30,7 +31,7 @@ module.exports = {
     "no-plusplus": "off",
     "no-param-reassign": ["error", { props: false }],
     "@typescript-eslint/ban-ts-comment": "off",
-    indent: ["error", 4],
+    indent: ["error", 2],
     "import/no-unresolved": "off", // https://github.com/typescript-eslint/typescript-eslint/issues/1624
     // "import/extensions": ["warn", "never"], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
   },
