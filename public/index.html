@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Mir Pechati</title>
   </head>
   <body>
@@ -38,9 +42,15 @@
         </div>
       </div>
       <div class="header-menu">
-        <a href="">
+        <button id="slide">
           <img src="../src/images/Group.png" alt="" />
-        </a>
+        </button>
+        <div class="header-menu-slide disp" id="menu">
+          <a class="nav-item" href="#"><h3>ГЛАВНАЯ</h3></a>
+          <a class="nav-item" href="#"><h3>О НАС</h3></a>
+          <a class="nav-item" href="#services-head"><h3>УСЛУГИ</h3></a>
+          <a class="nav-item" href="#"><h3>ФОТО РАБОТ</h3></a>
+        </div>
       </div>
       <div class="btn">
         <a class="button" href="#">ЗАКАЗАТЬ ПЕЧАТЬ</a>
@@ -81,12 +91,13 @@
     <div class="second-container">
       <div class="cards">
         <div class="card">
-          <div class="card-image">
-            <img class="card-img" src="../src/images/z2XcAMJQb-0.jpg" alt="" />
-          </div>
           <div class="card-tytle">
             <h3>ПЕЧАТЬ НАКЛЕЕК</h3>
           </div>
+          <div class="card-image">
+            <img class="card-img" src="../src/images/z2XcAMJQb-0.jpg" alt="" />
+          </div>
+
           <div class="card-desc">
             <p>
               🌿Эко-печать без запаха.<br />
@@ -96,12 +107,13 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image">
-            <img class="card-img" src="../src/images/z2XcAMJQb-0.jpg" alt="" />
-          </div>
           <div class="card-tytle">
             <h3>ПЕЧАТЬ НАКЛЕЕК</h3>
           </div>
+          <div class="card-image">
+            <img class="card-img" src="../src/images/z2XcAMJQb-0.jpg" alt="" />
+          </div>
+
           <div class="card-desc">
             <p>
               🌿Эко-печать без запаха.<br />
@@ -111,12 +123,13 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image">
-            <img class="card-img" src="../src/images/z2XcAMJQb-0.jpg" alt="" />
-          </div>
           <div class="card-tytle">
             <h3>ПЕЧАТЬ НАКЛЕЕК</h3>
           </div>
+          <div class="card-image">
+            <img class="card-img" src="../src/images/z2XcAMJQb-0.jpg" alt="" />
+          </div>
+
           <div class="card-desc">
             <p>
               🌿Эко-печать без запаха.<br />
@@ -131,23 +144,31 @@
       <h1 class="services-head">ФОТО НАШИХ РАБОТ</h1>
     </div>
     <div class="third-container">
-      <div class="card-image">
-        <img class="card-img-work" src="../src/images/photo1.jpeg" alt="" />
-      </div>
-      <div class="card-image">
-        <img class="card-img-work" src="../src/images/photo2.jpeg" alt="" />
-      </div>
-      <div class="card-image">
-        <img class="card-img-work" src="../src/images/photo3.jpeg" alt="" />
-      </div>
-      <div class="card-image">
-        <img class="card-img-work" src="../src/images/photo4.jpeg" alt="" />
-      </div>
-      <div class="card-image">
-        <img class="card-img-work" src="../src/images/photo5.jpeg" alt="" />
-      </div>
-      <div class="card-image">
-        <img class="card-img-work" src="../src/images/photo6.jpeg" alt="" />
+      <div class="fullArea">
+        <div class="gallery">
+          <img class="card-img-work" src="../src/images/photo1.jpeg" alt="" />
+          <img class="card-img-work" src="../src/images/photo2.jpeg" alt="" />
+          <img class="card-img-work" src="../src/images/photo3.jpeg" alt="" />
+          <img class="card-img-work" src="../src/images/photo4.jpeg" alt="" />
+          <img class="card-img-work" src="../src/images/photo5.jpeg" alt="" />
+          <img class="card-img-work" src="../src/images/photo6.jpeg" alt="" />
+        </div>
+        <div class="points">
+          <span class="point"></span>
+          <span class="point"></span>
+          <span class="point"></span>
+          <span class="point"></span>
+          <span class="point"></span>
+          <span class="point"></span>
+        </div>
+        <div class="third-container-buttons">
+          <div class="block-arrow" id="left-button">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </div>
+          <div class="block-arrow" id="right-button">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+        </div>
       </div>
     </div>
     <footer>

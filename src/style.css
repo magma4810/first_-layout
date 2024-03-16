@@ -35,7 +35,7 @@ header {
 .nav-item {
   color: aliceblue;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 700px;
   margin-right: 25px;
   transition: color 0.3s linear;
 }
@@ -109,13 +109,21 @@ header {
 .services {
   display: flex;
   justify-content: center;
-  margin: 75px;
+  margin: 25px;
 }
 
 .card-img {
-  max-width: 300px;
+  width: 300px;
   height: auto;
   border: 5px solid aliceblue;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards {
@@ -127,22 +135,8 @@ header {
 
 .work-photo {
   display: flex;
-  justify-content: space-around;
   justify-content: center;
-  margin: 75px;
-}
-
-.third-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 75px;
-  flex-wrap: wrap;
-}
-.card-img-work {
-  max-width: 300px;
-  height: auto;
-  border: 5px solid aliceblue;
-  margin: 40px;
+  margin: 25px;
 }
 
 footer {
@@ -173,6 +167,20 @@ footer {
   display: none;
 }
 
+.header-menu-slide {
+  position: absolute;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.disp {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .header-menu {
     display: block;
@@ -184,5 +192,26 @@ footer {
   }
   .img {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-logo > img {
+    max-width: 150px;
+    height: auto;
+  }
+  .header-phone {
+    display: none;
+  }
+  .third-container {
+    max-width: 250px;
+    height: 250px;
+  }
+  .first-container {
+    margin: 0px;
+    margin-right: 20px;
+  }
+  .card-img {
+    width: 200px;
   }
 }

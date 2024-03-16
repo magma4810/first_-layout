@@ -9,20 +9,25 @@ module.exports = {
     main: path.resolve(__dirname, "./src/index.ts"),
   },
   devtool: "inline-source-map",
-  resolve: {
-    extensions: [".ts", ".js"],
-  },
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        test: /\.ts$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
       },
       {
         test: /\.html$/i,
         use: "html-loader",
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
     ],
+  },
+  resolve: {
+    extensions: [".ts", ".js"],
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
