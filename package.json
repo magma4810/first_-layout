@@ -48,7 +48,7 @@
   "author": "",
   "license": "ISC",
   "lint-staged": {
-    "*.ts": "lint:fix",
+    "*.ts": "prettier --write 'src/**/*.ts' && eslint --ext .ts . --fix",
     "*.{js,css,html,md}": "prettier --write"
   }
 }
