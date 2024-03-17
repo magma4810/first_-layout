@@ -6,7 +6,9 @@ const rightBtn: Element | null = document.getElementById("right-button");
 point[0].classList.add("active-point");
 image[0].classList.add("active-img");
 
-let count: number = 0,j: number,i: number;
+let count: number = 0,
+  j: number,
+  i: number;
 
 for (i = 0; i < point.length; i++) {
   point[i].addEventListener("click", () => {
