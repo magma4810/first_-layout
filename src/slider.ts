@@ -1,16 +1,16 @@
-const point = document.querySelectorAll(".point");
-const image = document.querySelectorAll(".card-img-work");
-const leftBtn = document.getElementById("left-button");
-const rightBtn = document.getElementById("right-button");
+const point: NodeListOf<Element> = document.querySelectorAll(".point");
+const image: NodeListOf<Element> = document.querySelectorAll(".card-img-work");
+const leftBtn: Element | null = document.getElementById("left-button");
+const rightBtn: Element | null = document.getElementById("right-button");
 
 point[0].classList.add("active-point");
 image[0].classList.add("active-img");
 
-let count = 0;
+let count: number = 0,j: number,i: number;
 
-for (let i = 0; i < point.length; i++) {
+for (i = 0; i < point.length; i++) {
   point[i].addEventListener("click", () => {
-    for (let j = 0; j < image.length; j++) {
+    for (j = 0; j < image.length; j++) {
       point[j].classList.remove("active-point");
       image[j].classList.remove("active-img");
     }
@@ -21,7 +21,7 @@ for (let i = 0; i < point.length; i++) {
 }
 
 leftBtn?.addEventListener("click", () => {
-  for (let j = 0; j < image.length; j++) {
+  for (j = 0; j < image.length; j++) {
     point[j].classList.remove("active-point");
     image[j].classList.remove("active-img");
   }
@@ -52,7 +52,7 @@ function slowSlider() {
 
 let timerImage = setInterval(() => slowSlider(), 3000);
 
-const slider = document.querySelector(".third-container");
+const slider: Element | null = document.querySelector(".third-container");
 
 slider?.addEventListener("mouseover", () => {
   clearInterval(timerImage);

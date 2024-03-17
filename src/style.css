@@ -89,8 +89,9 @@ header {
 .first-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 75px;
+  justify-content: center;
+  margin: 30px;
+  height: 600px;
 }
 
 .first-container-info {
@@ -99,11 +100,13 @@ header {
   border-top: 3px solid rgb(238, 123, 81);
   border-bottom: 3px solid rgb(238, 123, 81);
   margin-left: 20px;
+  height: 80%;
 }
 
 .ul-item {
+  font-size: large;
   color: aliceblue;
-  margin: 20px 0px 20px 0px;
+  margin: 10px 0px 0px 10px;
 }
 
 .services {
@@ -210,6 +213,11 @@ button {
   .first-container {
     margin: 0px;
     margin-right: 20px;
+  }
+  .ul-item {
+    font-size: 15px;
+    color: aliceblue;
+    margin: 10px 0px 0px 10px;
   }
   .card-img {
     width: 200px;
