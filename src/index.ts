@@ -2,11 +2,11 @@ import "./stylesSlider.css";
 import "./style.css";
 import "./slider";
 
-const slide: Element | null = document.querySelector("#slide");
-const menu: Element | null = document.querySelector("#menu");
+const headerList = document.querySelector('.header-list');
+const headerBurger = document.querySelector('.header-burger');
 
-if (slide) {
-  slide.addEventListener("click", () => {
-    menu?.classList.toggle("disp");
-  });
-}
+headerBurger?.addEventListener('click', () => {
+  headerList!.classList.toggle('active');
+  headerBurger!.classList.toggle('active');
+  document.body.classList.toggle('lock');
+})
