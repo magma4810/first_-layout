@@ -9,24 +9,31 @@ body {
   padding: 0;
   background-color: rgb(164, 200, 226);
   color: aliceblue;
-}
-
-.header-logo {
-  margin: 0;
+  padding-top: 134px;
 }
 
 .header-logo > img {
-  max-width: 250px;
-  height: auto;
-  margin: 0;
+  width: 250px;
+  max-width: 100%;
 }
 
 header {
-  margin: 0px 30px;
-  padding-top: 30px;
+  position: fixed;
+  background-color: rgb(154, 186, 208);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid rgb(238, 123, 81);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0px 20px;
+  padding: 20px 0;
 }
 
 .header-nav {
