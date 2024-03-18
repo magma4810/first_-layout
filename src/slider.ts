@@ -7,19 +7,24 @@ point[0].classList.add("active-point");
 image[0].classList.add("active-img");
 
 let count: number = 0,
-  j: number,
-  i: number;
+  j: number;
 
-for (i = 0; i < point.length; i++) {
-  point[i].addEventListener("click", () => {
-    for (j = 0; j < image.length; j++) {
-      point[j].classList.remove("active-point");
-      image[j].classList.remove("active-img");
-    }
-    count = i;
-    image[count].classList.add("active-img");
-    point[count].classList.add("active-point");
-  });
+for (let i = 0; i < point.length; i++) {
+  if (point[i]) {
+    point[i].addEventListener("click", () => {
+      for (j = 0; j < image.length; j++) {
+        if (point[j] && image[j]) {
+          point[j].classList.remove("active-point");
+          image[j].classList.remove("active-img");
+        }
+      }
+      count = i;
+      if (image[count] && point[count]) {
+        image[count].classList.add("active-img");
+        point[count].classList.add("active-point");
+      }
+    });
+  }
 }
 
 leftBtn?.addEventListener("click", () => {
