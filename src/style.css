@@ -68,17 +68,12 @@ header:before {
   align-items: center;
 }
 
-.header-list {
+.header-list-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
   z-index: 3;
-}
-
-.header-list li {
-  list-style: none;
-  margin: 0px 0px 0px 20px;
 }
 
 .header-link {
@@ -303,7 +298,6 @@ button {
   }
   .header-list {
     overflow: auto;
-    display: block;
     position: fixed;
     top: -100%;
     left: 0;
@@ -314,11 +308,14 @@ button {
     padding: 150px 10px 30px 20px;
     transition: all 0.9s ease 0s;
   }
-  .header-list.active {
-    top: 0;
+  .header-list-container {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
   }
-  .header-phone {
-    display: none;
+
+  .header-list.active {
+    top: 1%;
   }
 }
 
@@ -328,7 +325,7 @@ button {
     height: auto;
   }
   .header-list {
-    padding: 100px 10px 30px 20px;
+    padding: 110px 10px 30px 20px;
   }
   .third-container {
     max-width: 250px;
@@ -348,5 +345,26 @@ button {
   }
   .header-body {
     height: 80px;
+  }
+  .header-phone {
+    padding-bottom: 40px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    z-index: 1;
+    transition: all 0.9s ease 0s;
+  }
+  .header-phone-text {
+    display: none;
+  }
+  .header-phone.active {
+    top: 1%;
   }
 }
