@@ -347,17 +347,16 @@ button {
     height: 80px;
   }
   .header-phone {
-    padding-bottom: 40px;
     overflow: auto;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     flex-direction: column;
     position: fixed;
     top: -100%;
     left: 0;
     width: 100%;
-    height: 95%;
+    height: 35%;
+    margin-top: 90vh;
     z-index: 1;
     transition: all 0.9s ease 0s;
   }

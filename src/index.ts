@@ -20,6 +20,7 @@ elementsArray!.map((el) =>
   el.addEventListener("click", () => {
     headerList!.classList.remove("active");
     headerBurger!.classList.remove("active");
+    headerPhone!.classList.toggle("active");
     document.body.classList.remove("lock");
   }),
 );
