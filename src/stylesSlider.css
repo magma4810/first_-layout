@@ -107,7 +107,7 @@ i.fa.fa-angle-right {
 
 @keyframes slide {
   0% {
-    opacity: 0.25;
+    opacity: 0.5;
   }
   100% {
     opacity: 2;
