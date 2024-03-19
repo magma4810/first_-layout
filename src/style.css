@@ -93,7 +93,10 @@ body {
     flex-direction: column;
     height: 50%;
   }
-
+  .third-container {
+    max-width: 450px;
+    height: 450px;
+  }
   .header-list.active {
     top: 1%;
   }
@@ -108,8 +111,8 @@ body {
     padding: 110px 10px 30px 20px;
   }
   .third-container {
-    max-width: 250px;
-    height: 250px;
+    max-width: 300px;
+    height: 300px;
   }
   .first-container {
     margin: 0px;
