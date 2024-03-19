@@ -1,6 +1,7 @@
-import "./stylesSlider.css";
+import "./header.css";
 import "./style.css";
-import "./slider";
+import "./footer.css";
+import "./index.css";
 
 const headerList: Element | null = document.querySelector(".header-list");
 const headerBurger: Element | null = document.querySelector(".header-burger");

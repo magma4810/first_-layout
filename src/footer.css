@@ -1,0 +1,25 @@
+footer {
+  background-color: rgb(151, 192, 222);
+  border-top: 3px solid rgb(238, 123, 81);
+  height: 150px;
+  width: auto;
+}
+
+.footer-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-vk {
+  height: 50px;
+}
+
+.social-whatsapp {
+  height: 50px;
+}

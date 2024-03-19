@@ -7,6 +7,8 @@ const path = require("path");
 module.exports = {
   entry: {
     main: path.resolve(__dirname, "./src/index.ts"),
+    services: path.resolve(__dirname, "./src/services.ts"),
+    workPhoto: path.resolve(__dirname, "./src/workPhoto.ts"),
   },
   devtool: "inline-source-map",
   module: {
@@ -31,10 +33,25 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "./public/index.html" }),
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+      filename: "index.html",
+      chunks: ["main"], // указать точку входа для данного HTML-файла
+    }),
+    new HtmlWebpackPlugin({
+      template: "./public/services.html",
+      filename: "services.html",
+      chunks: ["services"], // указать другую точку входа для данного HTML-файла
+    }),
+    new HtmlWebpackPlugin({
+      template: "./public/workPhoto.html",
+      filename: "workPhoto.html",
+      chunks: ["workPhoto"], // указать другую точку входа для данного HTML-файла
+    }),
+
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new BrowserSyncPlugin({
