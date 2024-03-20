@@ -9,6 +9,7 @@ module.exports = {
     main: path.resolve(__dirname, "./src/index.ts"),
     services: path.resolve(__dirname, "./src/services.ts"),
     workPhoto: path.resolve(__dirname, "./src/workPhoto.ts"),
+    about: path.resolve(__dirname, "./src/about.ts"),
   },
   devtool: "inline-source-map",
   module: {
@@ -39,17 +40,22 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       filename: "index.html",
-      chunks: ["main"], // указать точку входа для данного HTML-файла
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./public/services.html",
       filename: "services.html",
-      chunks: ["services"], // указать другую точку входа для данного HTML-файла
+      chunks: ["services"],
     }),
     new HtmlWebpackPlugin({
       template: "./public/workPhoto.html",
       filename: "workPhoto.html",
-      chunks: ["workPhoto"], // указать другую точку входа для данного HTML-файла
+      chunks: ["workPhoto"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./public/about.html",
+      filename: "about.html",
+      chunks: ["about"],
     }),
 
     new CleanWebpackPlugin(),
