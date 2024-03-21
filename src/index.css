@@ -1,0 +1,33 @@
+.img > img {
+  max-width: 650px;
+  height: auto;
+}
+
+.first-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px 0px 20px;
+  height: 610px;
+}
+
+.first-container-info {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid rgb(238, 123, 81);
+  border-bottom: 3px solid rgb(238, 123, 81);
+  margin-left: 20px;
+  height: 80%;
+}
+
+.ul-item {
+  font-size: large;
+  color: aliceblue;
+  margin: 10px 0px 0px 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
