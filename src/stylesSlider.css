@@ -1,19 +1,13 @@
-.third-container {
+.slider {
   display: flex;
   overflow: hidden;
   max-width: 650px;
   width: 100%;
   height: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  margin: 0px auto 50px auto;
   border: 5px solid aliceblue;
   position: relative;
   border-radius: 10px;
-}
-
-.fullArea {
-  display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -40,12 +34,6 @@
   background-color: rgb(238, 123, 81);
 }
 
-.gallery {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
 .card-img-work.active-img {
   display: flex;
 }
@@ -64,7 +52,7 @@
   animation: slide 3s;
 }
 
-.third-container-buttons {
+.slider-buttons {
   position: absolute;
   display: flex;
   justify-content: space-between;

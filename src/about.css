@@ -13,14 +13,12 @@
   height: auto;
   border: 3px solid aliceblue;
   border-radius: 20px;
-  /* margin: 20px; */
 }
 
 .container-block-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content:space-around; */
   margin: 0px 30px;
   padding-bottom: 100px;
 }
