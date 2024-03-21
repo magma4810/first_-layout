@@ -4,7 +4,7 @@ const image: NodeListOf<Element> = document.querySelectorAll(".card-img-work");
 const points: Element | null = document.createElement("div");
 points.className = "points";
 for (let i = 0; i < image.length; i++) {
-  let span = document.createElement("span");
+  const span = document.createElement("span");
   span.className = "point";
   if (points) {
     points.append(span);
@@ -30,8 +30,7 @@ const rightBtn: Element | null = document.getElementById("right-button");
 point[0].classList.add("active-point");
 image[0].classList.add("active-img");
 
-let indexActivePoint: number = 0,
-  j: number;
+let indexActivePoint: number = 0;
 
 for (let i = 0; i < point.length; i++) {
   if (point[i]) {
